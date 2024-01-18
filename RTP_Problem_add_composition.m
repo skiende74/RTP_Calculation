@@ -69,6 +69,6 @@ fprintf(' 요인 1+2까지 반영한 실질적 뽑기비용 : %f\n', cost_new1);
 %fprintf(' 요인 1+2+3까지 반영한 실질적 뽑기비용 : %f\n', cost_new2)
 fprintf(' RTP = 고전적 기댓값 / 실질적 뽑기비용 : %f / %f = %f = %f %%\n',expected_value, cost_new2, rtp, rtp*100)
 
-fprintf('\n [합성확률] \n')
+fprintf('\n [합성확률] : RTP : %.2f%% \n', rtp*100)
 fprintf(' %.4f %%    ',sell(1:end-1)./sell(2:end)*4*rtp*100)
 fprintf('\n')
